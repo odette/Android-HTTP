@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="jp.ddo.trismegistos.androidhttp" default="jar" basedir=".">
+
+	<!-- 設定 -->
+	<property name="jardir" value="jar" />
+	<property name="jarname" value="Android-HTTP" />
+
+	<!-- JARファイル作成 -->
+	<target name="jar" description="JARファイル作成">
+		<echo message="create JAR-file" />
+		<jar destfile="${jardir}/${jarname}.jar"/>
+			<fileset dir="bin/classes" />
+	</target>
+
+</project>
