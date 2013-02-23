@@ -1,3 +1,4 @@
+
 package jp.ddo.trismegistos.androidhttp.parser;
 
 import jp.ddo.trismegistos.androidhttp.exception.ApiParseException;
@@ -10,6 +11,6 @@ import jp.ddo.trismegistos.androidhttp.exception.ApiParseException;
  */
 public interface Parser<T> {
 
-	public T parse(String data) throws ApiParseException;
+    public T parse(String data) throws ApiParseException;
 
 }

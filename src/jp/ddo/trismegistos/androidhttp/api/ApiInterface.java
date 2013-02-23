@@ -1,3 +1,4 @@
+
 package jp.ddo.trismegistos.androidhttp.api;
 
 /**
@@ -8,7 +9,7 @@ package jp.ddo.trismegistos.androidhttp.api;
  */
 public interface ApiInterface<T> {
 
-	public T post();
+    public T post();
 
-	public T get();
+    public T get() throws Exception;
 }

@@ -1,3 +1,4 @@
+
 package jp.ddo.trismegistos.androidhttp.exception;
 
 /**
@@ -8,32 +9,32 @@ package jp.ddo.trismegistos.androidhttp.exception;
  */
 public class ApiParseException extends RuntimeException {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	public ApiParseException() {
-		super();
-	}
+    public ApiParseException() {
+        super();
+    }
 
-	/**
-	 * @param detailMessage
-	 * @param throwable
-	 */
-	public ApiParseException(final String detailMessage, final Throwable throwable) {
-		super(detailMessage, throwable);
-	}
+    /**
+     * @param detailMessage
+     * @param throwable
+     */
+    public ApiParseException(final String detailMessage, final Throwable throwable) {
+        super(detailMessage, throwable);
+    }
 
-	/**
-	 * @param detailMessage
-	 */
-	public ApiParseException(final String detailMessage) {
-		super(detailMessage);
-	}
+    /**
+     * @param detailMessage
+     */
+    public ApiParseException(final String detailMessage) {
+        super(detailMessage);
+    }
 
-	/**
-	 * @param throwable
-	 */
-	public ApiParseException(final Throwable throwable) {
-		super(throwable);
-	}
+    /**
+     * @param throwable
+     */
+    public ApiParseException(final Throwable throwable) {
+        super(throwable);
+    }
 
 }

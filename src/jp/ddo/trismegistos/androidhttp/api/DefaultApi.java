@@ -1,3 +1,4 @@
+
 package jp.ddo.trismegistos.androidhttp.api;
 
 /**
@@ -8,21 +9,21 @@ package jp.ddo.trismegistos.androidhttp.api;
  */
 public class DefaultApi extends AbstractApi<String> {
 
-	/**
-	 * デフォルトコンストラクタ。
-	 * 
-	 * @param url
-	 */
-	public DefaultApi(final String url) {
-		super(url);
-	}
+    /**
+     * デフォルトコンストラクタ。
+     * 
+     * @param url
+     */
+    public DefaultApi(final String url) {
+        super(url);
+    }
 
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	protected String parse(final String data) {
-		return data;
-	}
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    protected String parse(final String data) {
+        return data;
+    }
 
 }
