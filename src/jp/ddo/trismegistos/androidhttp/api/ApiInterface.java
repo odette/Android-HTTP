@@ -1,6 +1,9 @@
 
 package jp.ddo.trismegistos.androidhttp.api;
 
+import jp.ddo.trismegistos.androidhttp.exception.ApiAccessException;
+import jp.ddo.trismegistos.androidhttp.exception.ApiParseException;
+
 /**
  * API接続のためのinterface。
  * 
@@ -9,7 +12,21 @@ package jp.ddo.trismegistos.androidhttp.api;
  */
 public interface ApiInterface<T> {
 
-    public T post();
+    /**
+     * POST通信を行う。
+     * 
+     * @return APIの結果
+     * @throws ApiAccessException API通信時の例外発生時
+     * @throws ApiParseException 通信結果のparse処理失敗時
+     */
+    public T post() throws ApiAccessException, ApiParseException;
 
-    public T get() throws Exception;
+    /**
+     * GET通信を行う。
+     * 
+     * @return APIの結果
+     * @throws ApiAccessException API通信時の例外発生時
+     * @throws ApiParseException 通信結果のparse処理失敗時
+     */
+    public T get() throws ApiAccessException, ApiParseException;
 }

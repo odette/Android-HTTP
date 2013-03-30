@@ -1,16 +1,21 @@
 
 package jp.ddo.trismegistos.androidhttp.exception;
 
+import java.io.IOException;
+
 /**
  * APIの結果をパースした際の例外クラス。
  * 
  * @author y_sugasawa
  * @since 2013/01/27
  */
-public class ApiParseException extends RuntimeException {
+public class ApiParseException extends IOException {
 
     private static final long serialVersionUID = 1L;
 
+    /**
+     * デフォルトコンストラクタ。
+     */
     public ApiParseException() {
         super();
     }

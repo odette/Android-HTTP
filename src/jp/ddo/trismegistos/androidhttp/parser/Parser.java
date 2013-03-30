@@ -11,6 +11,13 @@ import jp.ddo.trismegistos.androidhttp.exception.ApiParseException;
  */
 public interface Parser<T> {
 
+    /**
+     * parse処理。
+     * 
+     * @param data parse対象の文字列。
+     * @return
+     * @throws ApiParseException parse失敗時
+     */
     public T parse(String data) throws ApiParseException;
 
 }

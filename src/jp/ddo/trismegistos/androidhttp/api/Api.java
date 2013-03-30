@@ -13,6 +13,7 @@ import jp.ddo.trismegistos.androidhttp.parser.Parser;
  */
 public class Api<T> extends AbstractApi<T> {
 
+    /** parserクラス。 */
     private Parser<T> parser;
 
     /**
