@@ -2,6 +2,7 @@
 package jp.ddo.trismegistos.androidhttp.item;
 
 import jp.ddo.trismegistos.androidhttp.exception.ApiAccessException;
+import jp.ddo.trismegistos.androidhttp.exception.ApiParseException;
 
 /**
  * 実行結果を格納するためのObject。
@@ -14,6 +15,9 @@ public class ResultItem<T> {
     /** 結果。 */
     public T result;
 
-    /** 例外。 */
-    public ApiAccessException ex;
+    /** API通信例外。 */
+    public ApiAccessException accessEx;
+
+    /** parse例外。 */
+    public ApiParseException parseEx;
 }
